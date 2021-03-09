@@ -38,3 +38,7 @@ Route::get('/ottienisoftware', function () {
     ];
     return view('download',$data);
 });
+
+route::get('/subfolder', function() {
+    return view('test.index');
+});
