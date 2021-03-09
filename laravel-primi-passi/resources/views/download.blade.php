@@ -19,12 +19,15 @@
   </div>
 
 
-   
 
-<!--@php 
-  foreach($arch as $architettura)
-    echo $architettura;
-@endphp-->
+
+@php   
+  foreach($arch as $architettura){
+@endphp
+    <li> @php echo $architettura  @endphp </li> 
+@php
+  }
+@endphp
 
 </body>
 </html>
