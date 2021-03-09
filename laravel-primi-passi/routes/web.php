@@ -20,9 +20,21 @@ use Illuminate\Support\Facades\Route;
 //Ripete i passaggi visti a lezione per l'uso di Laravel.
 //Create un semplice esercizio a piacere utilizzando le rotte e le views.
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'name' => ['jan','fede','anna','franco','max'],
+        'meta_preferita' => 'Ireland',
+        'full stack',
+        'vuoto' => []
+    ];
+    return view('home',$data);
 });
 
 Route::get('/ottienisoftware', function () {
-    return view('download');
+    $data = [
+        'arch' => ['x64','x32','arm'],
+        'os' => ['win','mac','linux'],
+        'pc' => 'hp Omen',
+        'awesomesauce'
+    ];
+    return view('download',$data);
 });
